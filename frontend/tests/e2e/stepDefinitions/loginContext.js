@@ -15,7 +15,6 @@ const alertmessage='#__react-alert__';
 
 Given('Admin has been redirected to login page', async function () {
     await page.goto(`${url}/login/`)
-    console.log("Admin has been redirected to login page")
     await expect(page.locator(loginButton)).toBeVisible();
   });
 

@@ -1,4 +1,3 @@
-
 const { BeforeAll, Before, After, AfterAll,setDefaultTimeout }= require("@cucumber/cucumber")
 const { chromium } = require("playwright")
 setDefaultTimeout(60000)
@@ -6,13 +5,18 @@ BeforeAll(async function () {
     global.browser = await chromium.launch({
         headless: false,
         slowMo: 1000,
+        video: 'retain-on-failure',
     })
 
 })
 
 Before(async function () {
-    
-    global.context = await global.browser.newContext()
+    const config = {}
+    config['recordVideo'] = {
+        dir: './tests/reports/videos',
+        size: { width: 1920, height: 1080 }
+      }
+    global.context = await global.browser.newContext(config)
     await global.context.tracing.start({ screenshots: true, snapshots: true, sources: true });
     global.page = await global.context.newPage()
 })
