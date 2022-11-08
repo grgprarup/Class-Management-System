@@ -1,0 +1,9 @@
+
+•python:S1192$"}Define a constant instead of duplicating this literal "'%s' should either include a `serializer_class` attribute, " 13 times.(÷Ùáš
+_python:S2208"GImport only needed names or import the module and then use its members.(­©‰ğ
+dpython:S2208"GImport only needed names or import the module and then use its members.(µƒ½şÿÿÿÿ
+Apython:S1481")Remove the unused local variable "email".(Ÿ½ı&
+Gpython:S1481ÿ".Remove the unused local variable "created_at".(úñƒ§
+7python:S125Ğ"Remove this commented out code.(´à÷è
+<python:S125Û"Remove this commented out code.(‹³æëûÿÿÿÿ
+Upython:S5754ò"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
