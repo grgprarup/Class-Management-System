@@ -37,7 +37,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test:e2e": "cucumber-js --require cucumber.config.js  --require tests/e2e/stepDefinitions/**/*.js --format @cucumber/pretty-formatter"
   },
   "eslintConfig": {
     "extends": [
@@ -56,5 +57,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.1",
+    "@cucumber/pretty-formatter": "^1.0.0",
+    "@playwright/test": "^1.24.1",
+    "playwright": "^1.24.1"
   }
 }

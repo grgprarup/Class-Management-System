@@ -1,0 +1,7 @@
+
+mpython:S1192z"UDefine a constant instead of duplicating this literal 'Data already exists.' 3 times.(ÕÚ¦ø
+apython:S18543"IRemove this assignment to local variable 'user'; the value is never used.(¸«°–
+;python:S1254"Remove this commented out code.(ˆ¾©òüÿÿÿÿ
+;python:S125`"Remove this commented out code.(¥™£”ûÿÿÿÿ
+ppython:S117…"XRename this local variable "endTime" to match the regular expression ^[_a-z][a-z0-9_]*$.(Å²Üß
+rpython:S117„"ZRename this local variable "startTime" to match the regular expression ^[_a-z][a-z0-9_]*$.(¦£Š
